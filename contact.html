@@ -1,0 +1,206 @@
+<html>
+    <head>
+        <title>Endorium Group - Contact</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="img/E-1.png">
+        <!--"CSS"-->
+        <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--"JS"-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+      <!--MDB-->
+        <!-- MDB icon -->
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <!-- Google Fonts Roboto -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="mdb/css/bootstrap.min.css">
+        <!-- Material Design Bootstrap -->
+        <link rel="stylesheet" href="mdb/css/mdb.min.css">
+        <!-- Your custom styles (optional) -->
+        <link rel="stylesheet" href="mdb/css/style.css">
+    </head>
+
+    <body>
+      <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="img/E.png" style="height: 40px;padding-left: 20px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Acceuil <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Le Groupe</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Nous Contacter</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="register.php">Login / Register</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+      </section>
+
+        <!---------------Bannier------------------->
+
+        <section id="banner">
+        <div class="container">
+            <div class="rob">
+             <div class="col-md-6">
+                 <p class="promo-title">Endorium Group - <br> Nous Contacter</p>
+
+
+             </div>   
+             <div class="col-md-6 text-center" class="img-fluid">
+                 <img src="">
+             </div>
+            </div>
+        </div>
+
+        <img src="img/white-wave-png-3.png" class="waves-botom">
+
+
+
+        </section>
+
+        
+       
+
+      <div class="form-contact">
+        <!--Section: Contact v.2-->
+        <section class="mb-4">
+
+          <!--Section heading-->
+          <h2 class="h1-responsive font-weight-bold text-center my-4">Nous Contacter</h2>
+          <!--Section description-->
+          <p class="text-center w-responsive mx-auto mb-5">Si vous avez des questions a nous posés Remplissez le formulaire ! </p>
+
+          <div class="row">
+
+              <!--Grid column-->
+              <div class="col-md-9 mb-md-0 mb-5">
+                  <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                      <!--Grid row-->
+                      <div class="row">
+
+                          <!--Grid column-->
+                          <div class="col-md-6">
+                              <div class="md-form mb-0">
+                                  <input type="text" id="name" name="name" class="form-control">
+                                  <label for="name" class="">Votre Nom</label>
+                              </div>
+                          </div>
+                          <!--Grid column-->
+
+                          <!--Grid column-->
+                          <div class="col-md-6">
+                              <div class="md-form mb-0">
+                                  <input type="text" id="email" name="email" class="form-control">
+                                  <label for="email" class="">Votre email</label>
+                              </div>
+                          </div>
+                          <!--Grid column-->
+
+                      </div>
+                      <!--Grid row-->
+
+                      <!--Grid row-->
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="md-form mb-0">
+                                  <input type="text" id="subject" name="subject" class="form-control">
+                                  <label for="subject" class="">Sujet de la demande</label>
+                              </div>
+                          </div>
+                      </div>
+                      <!--Grid row-->
+
+                      <!--Grid row-->
+                      <div class="row">
+
+                          <!--Grid column-->
+                          <div class="col-md-12">
+
+                              <div class="md-form">
+                                  <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                  <label for="message">Votre message</label>
+                              </div>
+
+                          </div>
+                      </div>
+                      <!--Grid row-->
+
+                  </form>
+
+                  <div class="text-center text-md-left">
+                    <a class="btn btn-primary" onclick="validateForm();">Send</a>
+                  </div>
+                  <div class="status"></div>
+                  <script>
+                    function validateForm() {
+                    var name =  document.getElementById('name').value;
+                    if (name == "") {
+                        document.querySelector('.status').innerHTML = "Name cannot be empty";
+                        return false;
+                    }
+                    var email =  document.getElementById('email').value;
+                    if (email == "") {
+                        document.querySelector('.status').innerHTML = "Email cannot be empty";
+                        return false;
+                    } else {
+                        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                        if(!re.test(email)){
+                            document.querySelector('.status').innerHTML = "Email format invalid";
+                            return false;
+                        }
+                    }
+                    var subject =  document.getElementById('subject').value;
+                    if (subject == "") {
+                        document.querySelector('.status').innerHTML = "Subject cannot be empty";
+                        return false;
+                    }
+                    var message =  document.getElementById('message').value;
+                    if (message == "") {
+                        document.querySelector('.status').innerHTML = "Message cannot be empty";
+                        return false;
+                    }
+                    document.querySelector('.status').innerHTML = "Sending...";
+                    return true;
+                    break;
+                  }
+                  </script>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-3 text-center">
+                  <ul class="list-unstyled mb-0">
+                      <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                          <p>Paris 1ard, 75001, France</p>
+                      </li>
+
+                      <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                          <p>contact@endoriumgroup.xyz</p>
+                      </li>
+                  </ul>
+              </div>
+              <!--Grid column-->
+
+          </div>
+
+        </section>
+        <!--Section: Contact v.2-->
+      </div>
+
+    </body>
+</html>

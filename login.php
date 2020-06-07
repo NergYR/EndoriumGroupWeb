@@ -51,7 +51,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html">Acceuil <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Le Groupe</a>
@@ -81,7 +81,7 @@
     <h4 class="card-title mt-3 text-center">Login</h4>
     <p>
       <a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Login via Twitter</a>
-      <a href="" class="btn btn-block btn-discord"> <i class="fab fa-discord-f"></i>   Login via Discord</a>
+      <a href="" class="btn btn-block btn-discord"> <i class="fab fa-discord"></i>   Login via Discord</a>
     </p>
     <p class="divider-text">
           <span class="bg-light">OU</span>

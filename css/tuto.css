@@ -1,6 +1,6 @@
 #background-servminecrafttuto
 {
-    background-image: linear-gradient(to left, #30B6AC, #2B9B93);
+    background-image: linear-gradient(to left, #0CCDFC, #06A2FC);
     color: #fff;
 }
 .bvn-txt p
@@ -9,7 +9,15 @@
     padding-left: 506px;
 
 }
-.endobanner 
+.endobanner img
 {
-    padding-left: 50px; 
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+.nav-tabs
+{
+    font-size: 20px;
+    font-weight: 700;
+
 }

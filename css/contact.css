@@ -1,3 +1,92 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: sans-serif ;
+
+}
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar
+{
+    background-image: linear-gradient(to right, #0CCDFC, #06A2FC);
+    padding: 0 !important;
+}
+.navbar-nav li
+{
+    padding:2 10px;
+     
+}
+.navbar-nav li a
+{
+    color: #fff !important;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+}
+.fa-bars
+{
+    color: #fff;
+    font-size: 30px !important;
+}
+.navbar-toggler
+{
+    outline: none !important;
+
+}
+
+/*-------------------------Bannère------------------------------*/
+#banner
+{
+    background-image: linear-gradient(to right, #0CCDFC, #06A2FC);
+    color:  #fff;
+    padding-top: 5%;
+}
+#banner a
+{
+    color: #fff;
+    text-decoration: none;
+}
+.promo-title
+{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 100px;
+}
+.join-btn
+{
+    width: 45;
+    margin: 20px;
+}
+.waves-botom
+{
+    width: 1660px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .background-contact
 {
     width: 1660px;

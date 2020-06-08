@@ -65,9 +65,11 @@ body
     height: 60px;
     padding-bottom: 2px;
 }
-.waves-botom
+.waves-botom 
 {
-    width: 1660px;
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
 
 }
 

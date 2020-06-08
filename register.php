@@ -52,7 +52,7 @@
                       <a class="nav-link" href="index.html">Acceuil <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Le Groupe</a>
+                      <a class="nav-link" href="Tuto.html">Tutoriels</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="contact.html">Nous Contacter</a>

@@ -9,15 +9,16 @@
     padding-left: 506px;
 
 }
-.endobanner img
-{
-    max-width: 100%;
-    height: auto;
-    width: auto\9; /* ie8 */
-}
 .nav-tabs
 {
     font-size: 20px;
     font-weight: 700;
 
+}
+
+.banner-img
+{
+    /* max-width: 100%; */ 
+    height: auto;
+    width: auto\9; /* ie8 */
 }

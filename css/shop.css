@@ -4,7 +4,9 @@
     color: #fff;
     padding-top: 5%;
 }
-.col-lg-4
+#section-img img
 {
-    background-color: #fff;
+    width: auto;
+    height: auto;
+    max-width: 100%;
 }

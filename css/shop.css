@@ -1,6 +1,10 @@
-#background-pricing
+.background-pricing
 {
     background-image: linear-gradient(to right, #0CCDFC, #06A2FC);
     color: #fff;
     padding-top: 5%;
+}
+.col-lg-4
+{
+    background-color: #fff;
 }

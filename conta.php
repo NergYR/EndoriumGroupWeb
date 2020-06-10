@@ -10,7 +10,7 @@ $phone = $_POST['phone'];
 $city = $_POST['city'];
 $depa = $_POST['depa'];
 
-     // Plusieurs destinataires
+     /*// Plusieurs destinataires
      $to  = 'energetiq@outlook.com'; // notez la virgule
 
      // Sujet
@@ -43,7 +43,7 @@ $depa = $_POST['depa'];
 
      // Envoi
      mail($to, $subject, $message, implode("\r\n", $headers));
-        
+        */
 
      
 
@@ -53,6 +53,13 @@ $depa = $_POST['depa'];
 
 
 echo "Voici vos Informations, '$name', '$lastname', '$mail', '$entreprise', '$phone', '$city', '$depa' .";
+
+$to = 'energetiq@outlook.com';
+$subject = 'TEST';
+$message = 'test';
+
+
+mail($to, $subject, $message);
 
 
 

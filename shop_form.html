@@ -1,6 +1,4 @@
-
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -14,7 +12,7 @@
     <link rel="icon" type="image/png" href="img/E-1.png">
         <!--"CSS"-->
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/shop.css">
+        <link rel="stylesheet" href="css/shop_form.css">
         <link rel="stylesheet" href="https://endorium.xyz/css/endoriumgroup/bootstrap.min.css">
         <link rel="stylesheet" href="https://endorium.xyz/css/endoriumgroup/font-awesome.min.css">
         <!--"JS"-->
@@ -43,7 +41,6 @@
         <META NAME="Reply-to" CONTENT="contact@endorium.xyz">
         <META NAME="REVISIT-AFTER" CONTENT="15">
 </head>
-
 <body>
     <section id="nav-bar">
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -72,74 +69,58 @@
             </div>
           </nav>
     </section>
-
-    <section id="pricing" class="section">
-        <div class="background-pricing">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="pricing-text section-header text-center">
-                        <h2 class="text-center" id="pricing-table-heading">Les Options</h2>
-                        <div class="desc-text">
-                            <p>Vous Disposez de Différentes Options Celon Vos Besoins !&nbsp;</p>
-                        </div>
-                    </div>
-                </div>
+    <form class="form-contact-shop" action="conta.php" method="POST">
+            <div class="form-row">
+            <div class="col-md-6 mb-3">
+            <label for="validationDefault01">Prénom</label>
+            <input name="firstname" type="text" class="form-control" id="validationDefault01" placeholder="Jack" required> 
             </div>
-            <div class="row pricing-tables">
-                <div class="col-12 col-md-4 col-lg-4 pricing-tables">
-                    <div class="pricing-table text-center">
-                        <div class="pricing-details">
-                            <h3>Basic<br></h3>
-                            <h1><span><i class="fa fa-dollar dollar"></i></span>Gratuit</h1>
-                            <ul>
-                                <li>Site Personnalisé</li>
-                            </ul>
-                        </div>
-                        <input type="button" class="plan-button" name="one"><a class="text-center d-sm-inline-block d-md-inline d-lg-inline-block d-xl-inline-block btn btn-border standard" href="shop_form.html">Commander</a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-4 pricing-tables">
-                    <div class="pricing-table text-center">
-                        <div class="pricing-details">
-                            <h3>standard</h3>
-                            <h1><span><i class="fa fa-dollar dollar"></i></span>Gratuit</h1>
-                            <ul>
-                                <li>Site Personnalisé<br></li>
-                                <li>Aide Au Référencement</li>
-                                <li>Hébergement Gratuit</li>
-                                <li>Sous domaine endorium.xyz</li>
-                                <li><br></li>
-                            </ul>
-                        </div>
-                          <div class="plan-button"><a class="text-center d-sm-inline-block d-md-inline d-lg-inline-block d-xl-inline-block btn btn-border standard" href="shop_form.html">Commander</a></div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-4 pricing-tables">
-                    <div class="pricing-table text-center">
-                        <div class="pricing-details">
-                            <h3>business</h3>
-                            <h1><span><i class="fa fa-dollar dollar"></i></span>Gratuit</h1>
-                            <ul>
-                                <li>Site Personnalisé</li>
-                                <li>Aide Au Référencement</li>
-                                <li>Hébergement Gratuit<br></li>
-                                <li>Sous domaine endorium.xyz<br></li>
-                                <li>Aide Google MyBuisness</li>
-                                <li>Integration Tawk.To</li>
-                            </ul>
-                        </div>
-                        <div class="plan-button"><a class="text-center d-sm-inline-block d-md-inline d-lg-inline-block d-xl-inline-block btn btn-border standard" href="shop_form.html">Commander</a></div>
-                    </div>
-                </div>
+            <div class="col-md-6 mb-3">
+            <label for="validationDefault02">Nom</label>
+            <input name="lastname" type="text" class="form-control" id="validationDefault02" placeholder="Paul" required> 
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="validationDefault02">Email</label>
+              <input name="mail" type="email" class="form-control" id="validationDefault02" placeholder="name@name.fr" required> 
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="validationDefault02">Nom De L'Entreprise</label>
+              <input name="entreprise" type="text" class="form-control" id="validationDefault02" placeholder="Endorium group" required> 
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="validationDefault02">Téléphone</label>
+              <input name="phone" type="tel" class="form-control" id="validationDefault02"  required> 
             </div>
         </div>
-    </div>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+            <label for="validationDefault03">Ville</label>
+            <input name="city" type="text" class="form-control" id="validationDefault03" required>
+            </div>
+            <div class="col-md-3 mb-3">
+            <label for="validationDefault04">Pays</label>
+            <select class="custom-select" id="validationDefault04" required>
+                <option selected disabled value="">Choix...</option>
+                <option>France</option>
+                <option>Belgique</option>
+            </select>
+            </div>
+            <div class="col-md-3 mb-3">
+            <label for="validationDefault05">Département</label>
+            <input name="depa" type="text" class="form-control" id="validationDefault05" placeholder="94100" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="form-check-label" for="invalidCheck2">
+                J'accèpte Les Termes D'utilisations des services et de Ventes
+            </label>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit" aria-disabled="true">Envoyer</button>
+    </form>
 
-    </section>
-
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 <footer class="page-footer font-small special-color-dark pt-4">
 
@@ -176,5 +157,4 @@
     <!-- Copyright -->
   
   </footer>
-
 </html>

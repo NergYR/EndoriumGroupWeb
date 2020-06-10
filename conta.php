@@ -60,7 +60,8 @@ echo "Voici vos Informations, '$name', '$lastname', '$mail', '$entreprise', '$ph
 
     
 
-
+header('Location: http://endoriumgroup.xyz/admin/thx.html');
+exit();
 ?>
 
 

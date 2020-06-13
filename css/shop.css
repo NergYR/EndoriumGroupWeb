@@ -10,3 +10,11 @@
     height: auto;
     max-width: 100%;
 }
+.row
+{
+    background-image: linear-gradient(to right, #0CCDFC, #06A2FC);
+}
+.row.pricing-tables
+{
+    background-image: linear-gradient(to right, #0CCDFC, #06A2FC);
+}

@@ -6,6 +6,7 @@
 body
 {
     font-family: sans-serif ;
+    background-color: #fff;
 
 }   
 #nav-bar
@@ -19,6 +20,7 @@ body
     background-image: linear-gradient(to right, #0CCDFC, #06A2FC);
     padding: 0 !important;
 }
+
 .navbar-nav li
 {
     padding:2 10px;

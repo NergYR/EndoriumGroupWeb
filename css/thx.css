@@ -1,0 +1,15 @@
+/* CSS Document */
+
+.banner
+{
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+.comande p
+{
+	background-image: url("banner.png");
+	text-align: center;
+
+	
+}
